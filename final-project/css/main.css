@@ -18,6 +18,18 @@ body {
     margin: auto;
 }
 
+a:link { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: inherit;
+}
+
+
+
 @media screen and (min-width:760px) {
     #services {
         display: grid;

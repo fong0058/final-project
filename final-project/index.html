@@ -21,27 +21,30 @@
     <div>
         <header>
             <!-- The header includes navigation bar and the header -->
-            <nav class="wrapper">
-                <!-- This is the navigation bar -->
-                <ul>
-                    <li><img src="images/logo.png" alt="logo"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><input type="text" placeholder="Search"><button type="submit"><i
-                                class="fa fa-search"></i></button>
-                    </li>
-                </ul>
-
+            <nav>
+                <div>
+                    <!-- This is the navigation bar -->
+                    <ul class="wrapper">
+                        <li><img src="images/logo.png" alt="logo"></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <input type="text" placeholder="Search"><button type="submit"><i class="fa fa-search"></i></button>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <div class="background-image wrapper">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum ipsam consectetur expedita
-                    natus error, enim modi ea voluptatem veritatis iure inventore, minima maxime veniam saepe illum
-                    adipisci optio explicabo. </p>
-                <button>Connect with us <i class="fa fa-caret-right"></i></button>
+            <div class="background-image">
+                <div class="wrapper">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum ipsam consectetur expedita
+                        natus error, enim modi ea voluptatem veritatis iure inventore, minima maxime veniam saepe illum
+                        adipisci optio explicabo. </p>
+                    <button>Connect with us <i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
         </header>
         <main>
@@ -102,7 +105,7 @@
             </section>
 
             <section class="wrapper our-vision">
-                <img src="images/vision.jpg" alt="vision">
+                <img src="images/vision.jpg" alt="vision" class="full">
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil delectus expedita quas
                     laudantium sint voluptatibus voluptatum architecto accusamus voluptas debitis ex, ab ipsa
@@ -147,7 +150,7 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
                         </fieldset>
-                        <button type="submit">Search</button>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
                 <div>
@@ -180,7 +183,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="wrapper">
             <!-- This is the footer -->
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
