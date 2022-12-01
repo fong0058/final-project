@@ -10,17 +10,46 @@ th, td {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
 }
 
 .wrapper {
     display: block;
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.margin {
+    margin: 24px 24px 0 24px;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #222;
+    color: #c78c06;
+}
+
+nav img {
+    display: block;
+    float: left;
+    height: 168px;
+    margin-top: 30px;
+}
+
+nav .home-box {
+    padding: 268px 0 40px 0;
+}
+
+nav li {
+    display: block;
+    padding: 40px 0;
 }
 
 a:link { 
     text-decoration: none; 
-    color: black;
+    color: inherit;
 }
 
 a:visited { 
@@ -28,7 +57,41 @@ a:visited {
     color: inherit;
 }
 
+li:hover {
+    background-color: #c78c06;
+    color: #222;
+}
 
+.searchbar {
+    width: auto;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.searchbar input {
+    display: inline-block;
+    width: calc(100% - 70px - 24px);
+    height: calc(70px - 48px);
+    border: none;
+    vertical-align: middle;
+    font-size: 1em;
+    padding: 24px 12px;
+}
+
+
+
+.searchbar button {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: #c78c06 1px solid;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.searchbar .fa {
+    color: #c78c06;
+}
 
 @media screen and (min-width:760px) {
     #services {
