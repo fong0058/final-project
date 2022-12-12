@@ -277,7 +277,7 @@ li:hover {
 
 #team .text div {
     display: block;
-    width: 100%;
+    width: fit-content;
     padding: 30px 16px;
 }
 
