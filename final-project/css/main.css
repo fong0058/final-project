@@ -1,16 +1,22 @@
-/* table {
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px black solid;
-} */
 /* font-family: 'Open Sans', sans-serif; */
 /* defaults */
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+button {
     font-size: 24px;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .wrapper {
@@ -20,11 +26,19 @@ body {
     margin: 0 auto;
 }
 
+/* used .margin to apply a margin to all the elements and no need to repeat */
 .margin {
-    margin: 24px 24px 0 24px;
+    margin: 0 15px 0 15px;
 }
 
+
+/* -------------------------------nav------------------------------------------- */
+
 nav {
+    display: block;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
     text-align: center;
     font-size: 1.2em;
     background-color: #222;
@@ -47,13 +61,13 @@ nav li {
     padding: 40px 0;
 }
 
-a:link { 
-    text-decoration: none; 
+a:link {
+    text-decoration: none;
     color: inherit;
 }
 
-a:visited { 
-    text-decoration: none; 
+a:visited {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -62,12 +76,7 @@ li:hover {
     color: #222;
 }
 
-.searchbar {
-    width: auto;
-    height: auto;
-    padding-bottom: 25px;
-}
-
+/* use calc to adjust the size of search bar, in order to make the input and the button fit well in the search bar */
 .searchbar input {
     display: inline-block;
     width: calc(100% - 70px - 24px);
@@ -91,18 +100,430 @@ li:hover {
 
 .searchbar .fa {
     color: #c78c06;
+    margin: auto 0;
+    display: block;
+    font-size: 24px;
 }
 
+
+.background-image {
+    background-image: url("../images/main-banner.jpg");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.heading-text {
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 100%;
+    padding: 12px 15px;
+    color: white;
+}
+
+.heading-text h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+.heading-text button {
+    background-color: #c78c06;
+    padding: 35px 35px;
+    margin: 24px 0;
+}
+
+.heading-text button .fa {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+
+/* -------------------------------about-us------------------------------------------- */
+
+#about-us {
+    background-color: #ffe6ac;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    display: block;
+}
+
+#about-us h2 {
+    margin: 46px 0 16px 0;
+}
+
+#about-us img {
+    width: 100%;
+}
+
+
+/* -------------------------------services------------------------------------------- */
+
+#services {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#services .block {
+    background-color: #ffe6ac;
+    margin-top: 24px;
+    width: 100%;
+    height: auto;
+}
+
+#services img {
+    height: auto;
+    width: 100%;
+}
+
+#services .services-text {
+    padding: 46px 16px 16px 16px;
+}
+
+#services div h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#services button {
+    width: max-content;
+    background-color: #222;
+    color: white;
+    padding: 35px 35px;
+    margin-top: 15px;
+}
+
+#services i {
+    margin-left: 24px;
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+
+/* -------------------------------our-vision------------------------------------------- */
+
+.our-vision .crop {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.our-vision .crop img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.our-vision .text {
+    display: block;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.our-vision .text h2 {
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.our-vision .text p {
+    padding-bottom: 2%;
+}
+
+.our-vision button {
+    width: 238px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.600);
+    border: #c78c06 solid 1px;
+    color: white;
+}
+
+.our-vision i {
+    margin-left: 24px;
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+
+/* -------------------------------team------------------------------------------- */
+
+#team {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#team h2 {
+    margin-bottom: 18px;
+}
+
+#team .block {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    background-color: #ffe6ac;
+
+}
+
+#team .block img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+#team .text div {
+    display: block;
+    width: 100%;
+    padding: 30px 16px;
+}
+
+#team .block h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 18px;
+
+}
+
+#team .block h4 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 7px;
+    border-bottom: #c78c06 2px solid;
+}
+
+#team .block p {
+    padding-top: 25px;
+}
+
+
+/* -------------------------------contact------------------------------------------- */
+
+#contact {
+    display: block;
+}
+
+#contact .block {
+    width: 100%;
+}
+
+#contact h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 18px;
+
+}
+
+.form label {
+    display: block;
+    width: 100%;
+}
+
+.form input {
+    display: block;
+    margin: 9px 0 14px 0;
+    height: 34px;
+    width: 100%;
+    resize: none;
+    border: #222 1px solid;
+}
+
+.form textarea {
+    display: block;
+    margin: 9px 0 14px 0;
+    height: 160px;
+    width: 100%;
+    resize: none;
+    border: #222 1px solid;
+
+}
+
+
+.form button {
+    padding: 9px;
+    background-color: #222;
+    color: #c78c06;
+    font-size: 24px;
+}
+
+.time caption {
+    text-align: left;
+}
+
+.time table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.time th {
+    background-color: #ffe6ac;
+}
+
+.time td {
+    padding: 8px;
+}
+
+.time th,
+td {
+    height: 53px;
+    border: 1px #222 solid;
+    vertical-align: middle;
+}
+
+.location {
+    margin-bottom: 22px;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    color: #c78c06;
+    padding: 16px;
+}
+
+
+
 @media screen and (min-width:760px) {
+
+    .margin {
+        margin: 0 10%;
+    }
+
+    nav ul {
+        display: block;
+        width: max-content;
+    }
+
+
+    /* -------------------------------nav------------------------------------------- */
+
+    nav img {
+        display: inline-block;
+        float: none;
+        width: 85px;
+        height: auto;
+        margin: 0 55px 0 0;
+        vertical-align: middle;
+
+    }
+
+    nav .home-box {
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 20px 0;
+        width: 125px;
+    }
+
+    nav .searchbar {
+        display: inline-block;
+    }
+
+    .searchbar input {
+        display: inline-block;
+        width: calc(100% - 70px - 24px);
+        height: 40px;
+        border: none;
+        vertical-align: middle;
+        font-size: 1em;
+        padding: 0 12px;
+    }
+
+    .searchbar .fa {
+        font-size: 20px;
+    }
+
+
+    .searchbar button {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: #c78c06 1px solid;
+        background-color: transparent;
+        vertical-align: middle;
+    }
+
+    .background-image {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .heading-text {
+        background-color: rgba(0, 0, 0, 0.600);
+        display: block;
+        height: 100%;
+        margin: 0 4%;
+        padding: 12px 6%;
+        color: white;
+    }
+
+    /* -------------------------------about-us------------------------------------------- */
+
+
+    #about-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    #about-us img {
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    #about-us .content {
+        display: block;
+        margin-right: 10%;
+        margin-left: 0;
+    }
+
+    #about-us h2 {
+        margin: 0 0 16px 0;
+    }
+
+
+    /* -------------------------------services------------------------------------------- */
+
+    #services div h3 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
     #services {
         display: grid;
-        grid-template-columns: 6;
-        grid-template-rows: 3;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
         grid-template-areas:
-        "heading heading heading heading heading heading"
-        "digital digital digital marketing marketing marketing"
-        "video video web web print print"
+            "heading heading heading heading heading heading"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print"
         ;
+    }
+
+    #services .services-text {
+        padding: 40px 15px 15px 15px;
+    }
+
+    #services div h3 {
+        font-size: 30px;
+    }
+
+    #services button {
+        width: 100%;
     }
 
     .heading {
@@ -127,5 +548,68 @@ li:hover {
 
     .print {
         grid-area: print;
+    }
+
+    #services .block {
+        margin-top: 0px;
+        height: auto;
+    }
+
+    #services img {
+        height: auto;
+        width: 100%;
+    }
+
+
+    /* -------------------------------our-vision------------------------------------------- */
+
+    .our-vision .crop img {
+        top: -230px;
+    }
+
+
+    /* -------------------------------team------------------------------------------- */
+
+    /* used display flex to order the team image and text as only the image of bob needs to change */
+    #team .block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #team .block div {
+        flex-basis: 50%;
+    }
+
+    #team .text div {
+        width: fit-content;
+    }
+
+    #team .bob {
+        order: 1;
+    }
+
+    /* -------------------------------contact------------------------------------------- */
+
+    #contact .block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 12px 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    #contact .form {
+        flex-basis: 49%;
+    }
+
+    #contact .location {
+        flex-basis: 49%;
+    }
+
+    #contact .time {
+        order: 1;
+        flex-basis: 100%;
     }
 }
